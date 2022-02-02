@@ -1,0 +1,10 @@
+<div class="block-info">
+    <h1>Plan your day!</h1>
+    <h2>User: Ivan Ivnov. Count of Task <span [textContent] = "h"></span></h2>
+</div>
+<div class="block-add">
+    <input type="text" (input)="CheckBtnAdd()" class="inp-add" [(ngModel)]="inpTask">
+    <button type="submit" class="btn-add" [disabled]="disabled_btnAdd" (click)="btnADD()">Add</button>
+</div>
+
+<app-child-list (fromChild)="getTask($event)" [task]="inpTask" [arr] = objTask></app-child-list>

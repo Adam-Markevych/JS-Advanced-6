@@ -1,0 +1,72 @@
+
+.table {
+	width: 100%;
+	border: none;
+	margin-bottom: 20px;
+}
+.table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #d8d8d8;
+	font-size: 14px;
+}
+.table thead tr th:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table thead tr th:last-child {
+	border-radius: 0 8px 8px 0;
+}
+.table tbody td {
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.table tbody tr:nth-child(even){
+	background: #f3f3f3;
+}
+.table tbody tr td:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table tbody tr td:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+.block-edit{
+	width: 80%;
+	height: 80px;
+	background-color: rgb(148, 148, 148);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inp2{
+	width: 200px;
+	height: 30px;
+}
+.btn-save{
+    background-color: rgb(255, 196, 0);
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+}
+.btn-edit,.btn-del{
+    width: 50px;
+    height: 30px;
+}
+.btn-del{
+	background-color: rgb(255, 0, 0);
+}
+.btn-edit{
+	background-color: rgb(4, 0, 255);
+}
+
+.textDone{
+	color: rgb(0, 128, 0);
+}
+.textProgress{
+	color: rgb(255, 0, 0);
+}
